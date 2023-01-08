@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{>header}}
+	<title>Login</title>
+</head>
+<body class="bgimage">
+	<section class="signin">
+		<div class="signin-panel">
+			<div class="login-content">
+				<form action="index.html">
+					<img class="avatar " src="images/avatar.svg">
+					<h3 class="title">Welcome Back To <br> <span class="underline">coderCrust</span></h3>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Username" required name="firstname" autocomplete="off">
+					</div>
+
+					<div class="input-field">
+						<i class="fas fa-lock"></i>
+						<input type="password" placeholder="Password" required name="password" autocomplete="off">
+					</div>
+
+                    <div class="input-field">
+						<i class="fas fa-lock"></i>
+						<input type="password" placeholder="Confirm Password" required name="password" autocomplete="off">
+					</div>
+
+					<input type="submit" id="submit" class="btn-style" value="Signup">
+					<div class="option">
+						<a href="#">Forgot Password</a>
+						<p>Already have account? <a href="./signin">Signin</a></p>
+					</div>
+				</form>
+			</div>
+			<div class="login-image">
+				<img class="loginimage" src="/images/Group-3.png" alt="herosection">
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
