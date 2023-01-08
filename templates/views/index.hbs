@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>CoderCrust</title>
+</head>
+
+<body>
+    <section class="navbar">
+        <header>
+            <a class="active" href="/index"><img class="logo" alt="logo" src="images/FinalLogo.jpg"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a class="active" a href="/index">Home</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">PracticeQuestions</a></li>
+                    <li><a href="#">Diamond</a></li>
+                    <li><a href="/signup"><span><i class="fa fa-user-plus"></i></span> SignUp</a></li>
+                    <li><a href="/signin"><span><i class="fa fa-user-plus"></i></span> SignIn</a></li>
+
+                </ul>
+            </nav>
+            <a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="black" width="40px" height="40px">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                        d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z" />
+                </svg></a>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlay__content">
+                <li><a class="active" a href="/index">Home</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">PracticeQuestions</a></li>
+                <li><a href="#">Diamond</a></li>
+                <li><a href="/signup"><span><i class="fa fa-user-plus"></i></span> SignUp</a></li>
+                <li><a href="/signin"><span><i class="fa fa-user-plus"></i></span> SignIn</a></li>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="search">
+        <div class="search-container">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <input type="search" placeholder="Search" name="search" autocomplete="off">
+        </div>
+    </section>
+
+
+    <section class="intro">
+        <div class="main-part">
+            <p id="p1">Let's Learn Togather</p>
+            <h1>When to use iterative <span class="underline">development</span>? You should use iterative development
+                only on projects that you want to succeed. </h1>
+            <h2>The Team CoderCrust</h2>
+            <img class="heroimage" src="/images/Group-3.png" alt="herosection">
+            <p id="p2">Will help you to become a professional coder.
+                We are the Team of <span class="bold-style">Professional CODER</span></p>
+            <button>Let's Start</button><button>Read More</button>
+        </div>
+    </section>
+
+
+    <section class="tutorial">
+        <div class="second-part">
+            <h2>Tutorials</h2>
+            <p id="tut-intro-1">Lear coding in easiest way</p>
+            <p id="tut-intro-2">Our services include Company Formation & Renewals, Trust & Fiduciary, Tax Residency
+                Setup With Family, Bank Accounts, Remote Management, Stock Trading Platforms, Ownership Solutions</p>
+        </div>
+    </section>
+
+    <section class="mid-tut">
+        <div class="zone">
+            <img class="mid-tut-img" src="/images/Vector (1).png" alt="mid-tut-img">
+            <h2>UAE Free Zone Compan</h2>
+            <p>Your registration agent, will answer all of your questions and help you to reach a
+                conclusion that meets your objectives
+                of investing in the UAE</p>
+            <a href="#">Get Started</a>
+        </div>
+        <div class="zone">
+            <img class="mid-tut-img" src="/images/Vector (2).png" alt="mid-tut-img">
+            <h2>UAE Free Zone Compan</h2>
+            <p>Your registration agent, will answer all of your questions and help you to reach a
+                conclusion that meets your objectives
+                of investing in the UAE</p>
+            <a href="#">Get Started</a>
+        </div>
+        <div class="zone">
+            <img class="mid-tut-img" src="/images/Vector (3).png" alt="mid-tut-img">
+            <h2>UAE Free Zone Compan</h2>
+            <p>Your registration agent, will answer all of your questions and help you to reach a
+                conclusion that meets your objectives
+                of investing in the UAE</p>
+            <a href="#">Get Started</a>
+        </div>
+    </section>
+
+
+    <section class="buttom-part">
+        <div class="services">
+            <div class="sub-service-1">
+                <p> Learn the ways in which you can benefit from a UAE/Offshore Company. Then get started on fulfilling
+                    your UAE dream.</p>
+                <a href="#">Claim a free quotes</a>
+            </div>
+            <div class="card">
+                <img class="sub-services-img" src="/images/G4.png" alt="sub-Service">
+                <h2>Bank Account Setup</h2>
+                <p> There are many banks in the United Arab Emirates [UAE]. Both locally owned and branches of
+                    multinational ones. Foreign banks adjust according to their parent s
+                    strategies and have changed local requirements overnight in the past. But we are here to help you
+                </p>
+                <a href="#">Learn More<img class="arrow" src="/images/G5.png" alt="Learn More"></a>
+            </div>
+            <div class="card">
+                <img class="sub-services-img" src="/images/G3.png" alt="sub-Service">
+                <h2>Bank Account Setup</h2>
+                <p> There are many banks in the United Arab Emirates [UAE]. Both locally owned and branches of
+                    multinational ones. Foreign banks adjust according to their parent s
+                    strategies and have changed local requirements overnight in the past. But we are here to help you
+                </p>
+                <a href="#">Learn More<img class="arrow" src="/images/G5.png" alt="Learn More"></a>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="sub-service"></div>
+            <div class="card">
+                <img class="sub-services-img" src="/images/G2.png" alt="sub-Service">
+                <h2>Bank Account Setup</h2>
+                <p> There are many banks in the United Arab Emirates [UAE]. Both locally owned and branches of
+                    multinational ones. Foreign banks adjust according to their parent s
+                    strategies and have changed local requirements overnight in the past. But we are here to help you
+                </p>
+                <a href="#">Learn More<img class="arrow" src="/images/G5.png" alt="Learn More"></a>
+            </div>
+            <div class="card">
+                <img class="sub-services-img" src="/images/G1.png" alt="sub-Service">
+                <h2>Bank Account Setup</h2>
+                <p> There are many banks in the United Arab Emirates [UAE]. Both locally owned and branches of
+                    multinational ones. Foreign banks adjust according to their parent s
+                    strategies and have changed local requirements overnight in the past. But we are here to help you
+                </p>
+                <a href="#">Learn More<img class="arrow" src="/images/G5.png" alt="Learn More"></a>
+            </div>
+            <div class="sub-service-1">
+                <p> Learn the ways in which you can benefit from a UAE/Offshore Company. Then get started on fulfilling
+                    your UAE dream.</p>
+                <a href="#">More about our service<img class="arrow" src="/images/G5.png" alt="Learn More"></a>
+            </div>
+        </div>
+    </section>
+
+    {{>footer}}
+    <script src="../javaScript/script.js"></script>
+</body>
+
+</html>
