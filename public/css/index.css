@@ -592,10 +592,11 @@ a {
 
 /* SignIn CSS Start */
 .bgimage {
-    background-image: url('/images/blur2.png');
+    /* background-image: url('/images/blur2.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
+    background-color: rgb(245, 249, 253);
 
 }
 
@@ -605,7 +606,7 @@ a {
     margin-bottom: 3%;
     padding: 1.5%;
     position: relative;
-    height:fit-content;
+    height: fit-content;
     width: 1000px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -617,7 +618,7 @@ a {
     display: flex;
     justify-content: center;
     text-align: center;
-    height:fit-content;
+    height: fit-content;
     width: 50%;
     background-color: #ffffff;
     border-radius: 10px;
@@ -650,12 +651,11 @@ a {
     margin-bottom: 15px;
     border: 2px solid orange;
     border-radius: 10px;
-    /* padding-left: 3px; */
 }
 
 
 .input-field i {
-    line-height: 55px;
+    line-height: 50px;
     color: rgb(9, 91, 207);
     font-size: 1.1rem;
     margin-left: 10px;
@@ -670,6 +670,11 @@ a {
     font-size: 1.1rem;
 
 }
+
+.input-field ::placeholder {
+    font-weight: 300;
+}
+
 
 .btn-style {
     margin-top: 20px;
@@ -712,28 +717,203 @@ a {
     width: 45%;
     padding-left: 10px;
     float: right;
-    
+
 
 }
 
 @media (max-width:800px) {
     .login-content {
         width: 100%;
-        height: fit-content!important;
+        height: fit-content !important;
     }
 
     .signin-panel {
         text-align: center;
         margin-left: 60px;
         flex-direction: column;
-        height:fit-content!important;
+        height: fit-content !important;
         width: 80%;
     }
 
-    .loginimage{
+    .loginimage {
         display: none;
     }
 
 }
 
 /* SignIn CSS End */
+
+/* Contact Us Css Start */
+.container {
+    width: 75%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 6% 10% 6% 12%;
+
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i {
+    font-size: 25px;
+    color: rgb(9, 91, 207);
+    margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+    font-size: 13px;
+    color: #8b8b8e;
+    font-weight: normal;
+}
+
+.right-side p {
+    font-weight: 300;
+}
+
+.container .content .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+
+.content .right-side .topic-text {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(9, 91, 207);
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.input-box ::placeholder {
+    font-weight: 300;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+}
+
+.right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.btn-contact {
+    margin-top: 20px;
+    width: 30%;
+    padding: 12px;
+    color: aliceblue;
+    background-color: rgb(0, 61, 147);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+}
+
+.btn-contact:hover {
+    background-color: rgb(50, 132, 248);
+    color: rgb(0, 61, 147);
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+
+    .container .content .right-side {
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        margin-left: 30px;
+        height: 100%;
+    }
+
+    .container .content {
+        flex-direction: column-reverse;
+    }
+
+    .container .content .left-side {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container .content .left-side::before {
+        display: none;
+    }
+
+    .container .content .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+/* Contact us Css End */

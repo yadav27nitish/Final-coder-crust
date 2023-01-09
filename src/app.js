@@ -46,7 +46,7 @@ app.get('/test',(req,res)=>{
 
 
 app.get('/contact',(req,res)=>{
-    res.render("contact");
+    res.render("contactus");
 })
 
 app.get('/aboutus',(req,res)=>{
