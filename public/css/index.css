@@ -591,15 +591,6 @@ a {
 /* Foooter CSS END */
 
 /* SignIn CSS Start */
-.bgimage {
-    /* background-image: url('/images/blur2.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
-    background-color: rgb(245, 249, 253);
-
-}
-
 .signin-panel {
     margin-top: 5.5%;
     margin-left: 18%;
@@ -724,14 +715,13 @@ a {
 @media (max-width:800px) {
     .login-content {
         width: 100%;
-        height: fit-content !important;
+        height: auto;
     }
 
     .signin-panel {
-        text-align: center;
         margin-left: 60px;
         flex-direction: column;
-        height: fit-content !important;
+        height: auto;
         width: 80%;
     }
 
@@ -807,6 +797,7 @@ a {
 
 .right-side p {
     font-weight: 300;
+    padding-top: 10px;
 }
 
 .container .content .right-side {
@@ -915,5 +906,215 @@ a {
     }
 }
 
-
 /* Contact us Css End */
+
+/* About Us CSS START */
+
+
+.grow-top {
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.grow-txt {
+    margin-top: 40%;
+    flex: 0.5;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "montserrat", sans-serif;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+.grow-txt>span {
+    font-family: "montserrat", sans-serif;
+    color: rgb(9, 90, 203);
+    font-size: 4rem;
+}
+
+.grow-image {
+    margin-top: 9%;
+    flex: 0.5;
+    width: 370px;
+    height: 370px;
+}
+
+@media (max-width: 800px) {
+    .grow-top {
+        flex-direction: column;
+    }
+
+    .grow-image {
+        margin-left: 8%;
+        width: 70% auto;
+    }
+
+    .grow-txt {
+        margin-top: 10%;
+    }
+}
+
+.aboutus-line {
+    margin-top: 4%;
+    width: 90%;
+}
+
+.about-head-line {
+    color: rgb(9, 91, 207);
+    width: 75%;
+    margin: 0 auto;
+    border-width: 3px;
+}
+
+.about-head-text {
+    font-size: 3rem;
+    color: rgb(9, 91, 207);
+    font-family: "montserrat", sans-serif;
+    margin-top: -53px;
+    float: right;
+    font-weight: normal;
+}
+
+
+@media(max-width:800px) {
+    .aboutus-line {
+        width: 75%;
+    }
+
+    .about-head-line {
+        width: 60%;
+    }
+
+    .about-head-text {
+        font-size: 2rem;
+        margin-top: -45px;
+    }
+}
+
+
+
+.aboutus-content {
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card2 {
+    padding: 2% 3% 3% 3%;
+    box-shadow: 2px 3px 8px #a7a9b4;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 47%;
+}
+
+.text-center img {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    margin: 2%;
+}
+
+.text-center .post {
+    background-color: rgb(77, 82, 87);
+    padding: 7px 18px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.card2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(141, 182, 241);
+    transform: scaleY(1);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.card2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(35, 120, 238);
+    transform: scaleY(0);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.card2:hover::after {
+    transform: scaleY(1);
+}
+
+.resume p {
+    font-weight: 300;
+    margin-top: 4%;
+    font-size: 15px;
+    color: #a3a3a3;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5;
+}
+
+.text-center .name {
+    margin-top: 3%;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.text-center .des {
+    margin-top: 2%;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    line-height: 1;
+
+}
+
+.social-list a {
+    padding: 10px;
+    color: rgb(9, 91, 207);
+    font-size: 19px;
+}
+
+.social-list a:hover {
+    color: rgb(77, 82, 87);
+}
+
+@media(max-width:800px) {
+    .aboutus-content {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .card2 {
+        width: 100%;
+        margin-bottom: 7%;
+    }
+}
+
+
+
+/* About US CSS END */
