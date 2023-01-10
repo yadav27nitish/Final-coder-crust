@@ -912,7 +912,7 @@ a {
 
 
 .grow-top {
-    padding-top: 3%;
+    padding-top: 2.5%;
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
@@ -937,10 +937,10 @@ a {
 }
 
 .grow-image {
-    margin-top: 9%;
+    margin-top: 8%;
     flex: 0.5;
-    width: 370px;
-    height: 370px;
+    width: 300px;
+    height: 300px;
 }
 
 @media (max-width: 800px) {
@@ -958,17 +958,15 @@ a {
     }
 }
 
-.aboutus-line {
-    margin-top: 4%;
-    width: 90%;
+.aboutus-line{
+    padding-inline: 10%;
 }
 
 .about-head-line {
     color: rgb(9, 91, 207);
-    height: 1px;
-    width: 75%;
-    margin: 0 auto;
-    border: 4px solid;
+    width: 80%;
+    margin: 5%;
+    border: 2px solid;
 }
 
 .about-head-text {
@@ -987,12 +985,13 @@ a {
     }
 
     .about-head-line {
-        width: 70%;
+        display: none;
     }
 
     .about-head-text {
         font-size: 2rem;
-        margin-top: -45px;
+        margin-top: 10%;
+        margin-bottom: 5%;
     }
 }
 
